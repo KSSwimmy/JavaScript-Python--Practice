@@ -117,28 +117,108 @@ console.log(typeof x); // Undefined
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
+// var now = 2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
 
-// Multiple operators ////////////////////
-var isFullAge = now - yearJohn >= fullAge; // true
-console.log(isFullAge);
+// // Multiple operators ////////////////////
+// var isFullAge = now - yearJohn >= fullAge; // true
+// console.log(isFullAge);
 
-// Grouping /////////////////////////////
-var ageJohn = now - yearJohn;
-var ageMark = 35;
-var average = (ageJohn + ageMark) / 2;
-console.log(average);
+// // Grouping /////////////////////////////
+// var ageJohn = now - yearJohn;
+// var ageMark = 35;
+// var average = (ageJohn + ageMark) / 2;
+// console.log(average);
 
+/*
 // Multiple assignments  ////////////////
 var x, y;
 x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+console.log(x, y); // 26 26
+
+// More operators 
+x *= 2;
+console.log(x); // 52
+
+x *= 10;
+console.log(x); // 520
+
+// All of this is the same thing //////////////
+x = x + 1;
+console.log(x); //521
+
+x += 1;
+console.log(x); //522
+
+x++;
+console.log(x); //523
+
+x--; 
+console.log(x); //522
+///////////////////////////////
+var kimberly, ida, tim;
+kimberly = 29;
+tim = 60; 
+ida = 64; 
+
+var year = 2019;
+console.log(kimberly);
+console.log(tim, ida);
+*/
+
+/*****************************
+* CODING CHALLENGE 1
+*/
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs
+3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
+
+GOOD LUCK 😀
+*/
+
+
+//STEP 1 -- Store mark and john's info ///////////////////////
+var markMass, johnMass, markHeight, johnHight, name1, name2 ;
+
+name1 = 'Mark';
+markMass = 78; //kg
+markHeight = 1.69; // meters
+
+name2 = 'John';
+johnMass = 92; //kg
+johnHeight = 1.95;
+
+//STEP 2 -- 2. Calculate both their BMIs //////////
+var markBMI = markMass / (markHeight * markHeight);
+
+var johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(markBMI, johnBMI);
+
+var isMarkHigher = true;
+
+//or
+
+var isJohnBMIhigher = markBMI < johnBMI;
+console.log(isJohnBMIhigher); //false
+
+//console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
+
+console.log(' Is ' + name1 + '\'s' + ' BMI ' + 'higher than ' + name2 + '\'s' + '? ' + isJohnBMIhigher);
 
 
 
-////
+
+
+
+
+
+
 
 
 
