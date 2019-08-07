@@ -182,7 +182,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 GOOD LUCK 😀
 */
 
-
+/*
 //STEP 1 -- Store mark and john's info ///////////////////////
 var markMass, johnMass, markHeight, johnHight, name1, name2 ;
 
@@ -209,8 +209,56 @@ console.log(isJohnBMIhigher); //false
 
 //console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is she married? ' + isMarried);
 
-console.log(' Is ' + name1 + '\'s' + ' BMI ' + 'higher than ' + name2 + '\'s' + '? ' + isJohnBMIhigher);
+//STEP 3 -- 4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
+console.log(' Is ' + name1 + '\'s' + ' BMI ' + 'higher than ' + name2 + '\'s' + '? ' + isJohnBMIhigher); //  Is Mark's BMI higher than John's? false
 
+*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//IF ELSE STATEMENTS 
+
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon 😀');
+}
+// if civil status is "married" then print out "John will hopefully marry soon :)"
+
+// John will hopefully marry soon :)
+
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married!'); //John will hopefully marry soon :)
+} else {
+    console.log(firstName + ' will hopefully marry soon 😀'); 
+
+}
+
+var markMass, johnMass, markHeight, johnHight, name1, name2 ;
+
+name1 = 'Mark';
+markMass = 78; //kg
+markHeight = 1.69; // meters
+
+name2 = 'John';
+johnMass = 92; //kg
+johnHeight = 1.95;
+
+var markBMI = markMass / (markHeight * markHeight);
+
+var johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(markBMI, johnBMI);
+
+
+if (markBMI > johnBMI) {
+    console.log('Nope');
+} else {
+    console.log('Yup');
+}
 
 
 
