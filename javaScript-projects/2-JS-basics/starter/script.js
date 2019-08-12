@@ -214,6 +214,7 @@ console.log(' Is ' + name1 + '\'s' + ' BMI ' + 'higher than ' + name2 + '\'s' + 
 
 */
 
+/*
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //IF ELSE STATEMENTS 
 
@@ -259,7 +260,9 @@ if (markBMI > johnBMI) {
 } else {
     console.log('Yup');
 }
+*/
 
+/*
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //BOOLEAN LOGIC 
 
@@ -270,12 +273,117 @@ if (age < 13) {
     console.log(firstName + ' is a boy.');
 } else if (age >= 13 && age < 20) {
     console.log(firstName + ' is a teenager.');
-} else if (age >= 20 && age < 30) {
-    console.log(firstName + ' is a young man.');
+} else if (age >= 20 || age < 30) {
+    console.log(firstName + ' is a young man.'); // John is a young man 
 } else {
     console.log(firstName + ' is a man.');
 }
 
+
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 || age < 20) {
+    console.log(firstName + ' is a teenager.'); // John is a teenager 
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');  
+} else {
+    console.log(firstName + ' is a man.');
+}
+
+
+if (!age < 13) {
+    console.log(firstName + ' is a boy.'); // John is a boy
+} else if (age >= 13 || age < 20) {
+        //true       or  //
+    console.log(firstName + ' is a teenager.'); 
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');  
+} else {
+    console.log(firstName + ' is a man.');
+}
+
+
+//AND ( && ) : true if all are true 
+//OR ( || ) : true if one is true
+//NOT ( ! ) : inverts true/false value 
+
+var ageD = 20; 
+
+age >= 20; // false
+age < 30; //true 
+!(age < 30); //false 
+
+age >= 20 && age < 30; // false 
+age >= 20 || age < 30; // true
+ 
+*/
+
+///////// THE TERNARY OPERATOR (CONDITIONAL) AND SWITCH STATEMENTS ///////////////////////////////////////////////////////////////////////////////
+// The Ternary Operator - The if/else statement all in one line 
+
+/*
+* condition 
+* if block
+* else block
+*/
+
+var firstName = 'John';
+var age = 21;
+
+//condition          //if block                                      //else block
+age >= 21      ?     console.log(firstName + 'drinks beer.')    :    console.log(firstName + ' drinks juice.'); // John drinks juice.
+
+//the above code rewritten in a one liner
+age >= 21 ? console.log(firstName + 'dinks beer.') : console.log(firstName + ' dinks juice.'); 
+
+
+                // Is 21 greater than or equal 2 18?      // if he is then : beer    // is he is not then : juice
+var drink =    age >= 18 ?                                'beer' :                   'juice';
+console.log(drink);
+
+//the above code rewritten in a one liner
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+//Below is the same thing as above:  
+// if (age >= 18) {
+//     var drink = 'beer';
+// } else {
+//     var drink = 'juice';
+// }
+
+//SWITCH STATEMENT //////////////////////////
+
+var job = 'instructor';
+switch (job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+}
+
+age = 56;
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager.');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man.');
+        break;
+    default:
+        console.log(firstName + ' is a man.');
+}
 
 
 
