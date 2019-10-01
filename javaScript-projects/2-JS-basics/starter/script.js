@@ -354,12 +354,14 @@ console.log(drink);
 
 //SWITCH STATEMENT //////////////////////////
 
+// switch is going to look for the string 'instructor' you can assign multiple values 
+
+/*
 var job = 'instructor';
 switch (job) {
-    case 'teacher':
     case 'instructor':
-        console.log(firstName + ' teaches kids how to code.');
-        break;
+        console.log(firstName + ' teaches kids how to code.'); // John teaches kids how to code. 
+        break; // Without the break keyword it will continue evaluating, looking for instructor 
     case 'driver':
         console.log(firstName + ' drives an uber in Lisbon.');
         break;
@@ -369,6 +371,40 @@ switch (job) {
     default:
         console.log(firstName + ' does something else.');
 }
+
+
+var job = 'Cop';
+switch (job) {
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break; // Without the break keyword it will continue evaluating, looking for instructor 
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.'); // John does something else
+}
+
+
+var job = 'instructor';
+switch (job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break; // Without the break keyword it will continue evaluating, looking for instructor 
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.'); // John does something else
+}
+
 
 age = 56;
 switch (true) {
@@ -381,15 +417,66 @@ switch (true) {
     case age >= 20 && age < 30:
         console.log(firstName + ' is a young man.');
         break;
-    default:
+    default: //
         console.log(firstName + ' is a man.');
 }
 
+*/
+
+// var firstName = 'John';
+// var age = 20;
+
+// if (age < 13) {
+//     console.log(firstName + ' is a boy.');
+// } else if (age >= 13 && age < 20) {
+//     console.log(firstName + ' is a teenager.');
+// } else if (age >= 20 || age < 30) {
+//     console.log(firstName + ' is a young man.'); // John is a young man 
+// } else {
+//     console.log(firstName + ' is a man.');
+// }
 
 
+// TRUTHY AND FALSY VALUES AND EQUALITY OPERATORS //////////////////////////////////////////////////////////////////
 
+// Falsy values: undefined. null, 0, '', NaN (Not a Number)
+// Truthy values: NOT falsy values 
 
+var height; // undefined 
 
+// If we define the variable with 0 it will still come out to be 'Variable isn't defined'
+height = 0;
+
+// A handy way of testing to see if a falsy value is being defined
+if (height) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined'); // it will be this because it isn't defined.
+}
+
+// the OR operator is true if one is true
+// another way to check to see if the variable has been defined 
+if (height || height === 0) {
+    console.log('Variable is defined'); // it will be this because it is defined.
+} else {
+    console.log('Variable has NOT been defined'); 
+}
+
+var height2 = 23;
+
+// Equality operators 
+// So you see, the equal equal operator does type coercion. When we use this operator here, it converts the string of 23 to a number. 
+//and then says that it's the same as 23, the number.
+// So again, JavaScript does type coercion, which basically means to convert this string here to a number, and then compares the numbers, and then of course they are the same.
+if (height2 == '23') {
+    console.log('The == operator does type coercion!');
+}
+
+//Strict Equality
+// === is equal to 'whatever'
+if (height2 === '23') {
+    console.log('The == operator does type coercion!'); // WILL NOT show in the console because it is false 
+}
 
 
 
