@@ -523,10 +523,48 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 
 // FUNCTIONS ///////////////////////////////////////////////////////////////////////////////////
 
+var ageIda = calculateAge(1954);
+var ageKim = calculateAge(1989);
+var ageTim = calculateAge(1955);
+
+function calculateAge(birthYear) {
+    return 2019 - birthYear;
+}
+console.log(ageIda, ageKim, ageTim);
+
+// New function
+function yearsUntilRetirement(birthYear, firstName)
+{
+    var age = calculateAge(birthYear);
+    var retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + ' returns in ' + retirement + ' years.')
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
+
+    console.log(firstName + ' retires in ' + retirement + ' years.')
+}
+
+yearsUntilRetirement(1954, 'Ida'); // (birthYear, firstName) 
+yearsUntilRetirement(1989, 'Kim');
+yearsUntilRetirement(1955, 'Tim');
+
+// var newHire = whatIfImGoodAtBoth('kSSwimmy');
+
+// function whatIfImGoodAtBoth(hireMe) {
+//     return hireMe;
+// }
+// console.log(newHire);
 
 
+const IfImGoodAtBoth = 'Design and Programming';
 
+ newHire = (IfImGoodAtBoth) => { 
+    return "KSSwimmy";
+};
 
-
+console.log(IfImGoodAtBoth + ', productivity all in one 🎨💻');
 
 
