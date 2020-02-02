@@ -636,5 +636,35 @@ console.log(IfImGoodAtBoth + ', productivity all in one 🎨💻');
 // var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 // console.log(isDesigner);
 
+// OBJECTS AND PROPERTIES//////////////////////////////////////////////////////////////////////////////
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.firstName); //dot notation
+console.log(john['firstName']); //bracket notation
+
+var x = 'birthYear'
+console.log(john[x]); //another way
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+// new Object syntx
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+
+
+
 
 
