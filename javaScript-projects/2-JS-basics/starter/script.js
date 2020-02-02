@@ -182,6 +182,17 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 GOOD LUCK 😀
 */
 
+// JohnHeight = 
+
+
+
+
+
+
+
+
+
+
 /*
 //STEP 1 -- Store mark and john's info ///////////////////////
 var markMass, johnMass, markHeight, johnHight, name1, name2 ;
@@ -496,6 +507,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 GOOD LUCK 😀
 */
 
+/*
 var scoreJohn = (189 + 120 + 103) / 3; // 137.33333333333334 John is the winner 
 var scoreMike = (129 + 94 + 123) / 3; // 115.33333333333333
 
@@ -539,7 +551,7 @@ function yearsUntilRetirement(birthYear, firstName)
     var retirement = 65 - age;
 
     if (retirement > 0) {
-        console.log(firstName + ' returns in ' + retirement + ' years.')
+        console.log(firstName + ' retires in ' + retirement + ' years.')
     } else {
         console.log(firstName + ' is already retired.')
     }
@@ -566,5 +578,63 @@ const IfImGoodAtBoth = 'Design and Programming';
 };
 
 console.log(IfImGoodAtBoth + ', productivity all in one 🎨💻');
+
+*/
+
+// FUNCTION STATEMENTS AND EXPRESSIONS /////////////////////////////////////////////
+
+// Function declaration 
+//function whatDoYouDo
+
+// Function expression
+// var whatDoYouDo = function(job, firstName) {
+//     switch(job) {
+//         case 'teacher':
+//         return firstName + ' teaches kids how to code';
+//         case 'driver':
+//         return firstName + ' drives a cap in Lisbon';
+//         case 'designer':
+//             return firstName + ' designs beautiful websites';
+//         default:
+//             return firstName + ' does something else';
+
+
+//     }
+// }
+// console.log(whatDoYouDo('designer', 'Kimberly'));
+// console.log(whatDoYouDo('teacher', 'John')); 
+
+
+// ARRAYS ////////////////////////////////////////////////////////////////
+
+// // Initialize new array
+// var names = ['John', 'Mark', 'Jane'];
+// var years = new Array(1990, 1969, 1948);
+
+// console.log(names[2]);
+// console.log(names.length);
+
+// // Mutate array data
+// names[1] = 'Ben';
+// names[names.length] = 'Mary';
+// console.log(names);
+
+// // Different data types
+// var john = ['John', 'Smith', 1990, 'designer', false];
+
+// john.push('blue');
+// john.unshift('Mr.');
+// console.log(john);
+
+// john.pop();
+// john.pop();
+// john.shift();
+// console.log(john);
+
+// console.log(john.indexOf(23));
+
+// var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+// console.log(isDesigner);
+
 
 
