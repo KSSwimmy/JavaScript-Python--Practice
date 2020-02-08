@@ -338,23 +338,23 @@ age >= 20 || age < 30; // true
 * else block
 */
 
-var firstName = 'John';
-var age = 21;
+// var firstName = 'John';
+// var age = 21;
 
-//condition          //if block                                      //else block
-age >= 21      ?     console.log(firstName + 'drinks beer.')    :    console.log(firstName + ' drinks juice.'); // John drinks juice.
+// //condition          //if block                                      //else block
+// age >= 21      ?     console.log(firstName + 'drinks beer.')    :    console.log(firstName + ' drinks juice.'); // John drinks juice.
 
-//the above code rewritten in a one liner
-age >= 21 ? console.log(firstName + 'dinks beer.') : console.log(firstName + ' dinks juice.'); 
+// //the above code rewritten in a one liner
+// age >= 21 ? console.log(firstName + 'dinks beer.') : console.log(firstName + ' dinks juice.'); 
 
 
-                // Is 21 greater than or equal 2 18?      // if he is then : beer    // is he is not then : juice
-var drink =    age >= 18 ?                                'beer' :                   'juice';
-console.log(drink);
+//                 // Is 21 greater than or equal 2 18?      // if he is then : beer    // is he is not then : juice
+// var drink =    age >= 18 ?                                'beer' :                   'juice';
+// console.log(drink);
 
-//the above code rewritten in a one liner
-var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+// //the above code rewritten in a one liner
+// var drink = age >= 18 ? 'beer' : 'juice';
+// console.log(drink);
 
 //Below is the same thing as above:  
 // if (age >= 18) {
@@ -638,33 +638,84 @@ console.log(IfImGoodAtBoth + ', productivity all in one 🎨💻');
 
 // OBJECTS AND PROPERTIES//////////////////////////////////////////////////////////////////////////////
 
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false
+// };
+
+// console.log(john.firstName); //dot notation
+// console.log(john['firstName']); //bracket notation
+
+// var x = 'birthYear'
+// console.log(john[x]); //another way
+
+// john.job = 'designer';
+// john['isMarried'] = true;
+// console.log(john);
+
+// // new Object syntx
+// var jane = new Object();
+// jane.firstName = 'Jane';
+// jane.birthYear = 1969;
+// jane['lastName'] = 'Smith';
+// console.log(jane);
+/*
+// OBJECTS AND METHODS//////////////////////////////////////////////////////////////////////////////
+//Only objects have methods
+
+
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false,
+//     calcAge: function(birthYear) {
+//         return 2018 - birthYear;
+//     }
+// };
+
+// console.log(''john.calcAge(1990));
+
+// THE THIS KEYWORD //////////
+//because the birthYear is already declared we use the 'this' keyword
+// the 'this' keyword means the present and current object
+*/
+
 var john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1990,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
-    isMarried: false
+    isMarried: false,
+    calcAge: function() {
+        return 2018 - this.birthYear;
+    }
 };
 
-console.log(john.firstName); //dot notation
-console.log(john['firstName']); //bracket notation
+john.age = john.calcAge()
 
-var x = 'birthYear'
-console.log(john[x]); //another way
+console.log(john.calcAge())
 
-john.job = 'designer';
-john['isMarried'] = true;
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function() {
+        this.age = 2018 - this.birthYear; // stored the age into the object.
+    }
+};
+
+john.calcAge();
+
 console.log(john);
-
-// new Object syntx
-var jane = new Object();
-jane.firstName = 'Jane';
-jane.birthYear = 1969;
-jane['lastName'] = 'Smith';
-console.log(jane);
-
-
-
-
-
