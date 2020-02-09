@@ -18,5 +18,25 @@ var countBits = function(n) {
    
   };
   
-///////////////////////////////////////// ANOTHER SOLUTION (BEST PRACTICE)
+///////// ANOTHER SOLUTION /////////////////////////////////
 countBits = n => n.toString(2).split('0').join('').length;
+
+
+/* 2. Trolls are attacking your comment section!
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+Note: for this kata y isn't considered a vowel. */
+
+
+function disemvowel(str) {
+    //remove vowels from a string ("a", "i", "o", "u")
+    let stringy = ["This website is for losers LOL!"];
+    
+    str = stringy.replace(/^[aeiou]$/i, ""); 
+     
+      return str;
+      
+    }
+
+
