@@ -189,7 +189,7 @@ function reverseString(str) {
   
   reverseString('hello world')
 
-  //OTHER SOLUTIONS //////////////////////////////////////////////////
+  //OTHER SOLUTIONS //////////////////////////////////////////////
 
   // v1.0
 function reverseString(str) {
@@ -242,3 +242,26 @@ function reverseString(str) {
   // const reverseString = (str) => {
   //   return str.split('').reverse().join('');
   // };
+
+//REVERSE NUMBERS //////////////////////////////////////////////////////////////////////////////////////////////////
+//The ****parseFloat()**** function parses an argument (converting it to a string first if needed) 
+//and returns a floating point number.
+//parseFloat is a top-level function and not a method of any object.
+
+//In this case the number gets converted into a string. 
+
+   function reverseNumber(num) {
+    return (
+      parseFloat(
+        num
+        .toString()
+        .split('')
+        .reverse()
+        .join('')
+        * Math.sign(num)
+        )
+      )
+    
+    }
+    reverseNumber(12345);
+    

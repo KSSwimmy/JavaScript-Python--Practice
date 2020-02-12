@@ -29,6 +29,9 @@ base_pos = 1
   
 # Recursive function to reverse 
 # digits of num 
+
+# ***Global**** keyword in Python. Global keyword is a keyword that allows a user to modify a variable outside of the current scope. 
+#It is used to create global variables from a non-global scope i.e inside a function.
 def reversDigits(num): 
     global rev_num 
     global base_pos 
