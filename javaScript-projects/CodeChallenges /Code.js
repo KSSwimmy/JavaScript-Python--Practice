@@ -252,16 +252,34 @@ function reverseString(str) {
 
    function reverseNumber(num) {
     return (
-      parseFloat(
-        num
-        .toString()
-        .split('')
-        .reverse()
-        .join('')
-        * Math.sign(num)
+      parseFloat(num.toString().split('').reverse().join('')* Math.sign(num)
         )
       )
     
     }
     reverseNumber(12345);
     
+//REVERSE CASING///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Write a function that takes in a string, reverses the 'casing' of that string, 
+//and returns the "reversed-casing" string.
+
+//NEEDS REVISING ******************************
+
+function reverseCase(str) {
+    let string = 'HELLO world!'
+    
+    let theArray = string.split(' '); //putting a space between the empty string inserts a comma between the space
+    console.log(theArray)
+    
+    let newArray = [];
+    
+    
+    // for(let index = 0; index < theArray.length; index++){
+     newArray.reverse(theArray[0].toLowerCase() + ' ' + theArray[1].toUpperCase())
+    // }
+    
+    return newArray.join(' ')
+    //console.log()
+  
+}
+//NEEDS REVISING ******************************
