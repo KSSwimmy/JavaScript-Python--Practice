@@ -283,7 +283,23 @@ function reverseCase(str) {
     //console.log()
   
 }
-//NEEDS REVISING ****************************** works but doesn't pass "reverse_casing" test
+//THE REVISED VERSION ****************************** Got help from Adetunji Shennaike * He helped made it dynamic
+
+function reverseCase(str) {
+
+    let ans = str.split(''), res = ''
+    ans.forEach( element => {
+      if(element === element.toUpperCase()){
+        res += element.toLowerCase()
+      }
+      else {
+        res += element.toUpperCase()
+      }
+    })
+    return res
+  }
+  const string = 'HELLO world!'
+  reverseCase(string)
 
 
 
