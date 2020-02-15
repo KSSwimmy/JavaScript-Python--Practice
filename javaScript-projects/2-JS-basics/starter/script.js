@@ -719,3 +719,5 @@ var john = {
 john.calcAge();
 
 console.log(john);
+
+

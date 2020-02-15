@@ -283,7 +283,7 @@ function reverseCase(str) {
     //console.log()
   
 }
-//THE REVISED VERSION ****************************** Got help from Adetunji Shennaike * He helped made it dynamic
+//THE REVISED VERSION ****************************** Got help from Adetunji Shennaike * He helped make the function dynamic
 
 function reverseCase(str) {
 
@@ -301,7 +301,27 @@ function reverseCase(str) {
   const string = 'HELLO world!'
   reverseCase(string)
 
+// FIZZ BUZZ /////////////////////////////////////////////////////////////////////////////////////////////
+// Needs revising **************************** see screenshot of example code out put
 
+function fizzBuzz(n) {
+  // Write your code here
+let str = '';
+
+
+  if(!(n % 3)) str += 'Fizz'
+  if(!(n % 5)) str += 'Buzz'
+
+
+  console.log(str || n)
+
+
+  if(n >= 100) return
+
+
+  fizzBuzz(++n)
+}
+fizzBuzz(1)
 
 //TO CAMEL CASING///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Good morning! Complete the function so that it converts dash-delimited ("kebab" case) & underscore-delimited 
