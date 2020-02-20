@@ -1,0 +1,158 @@
+_*UI and Git*_
+
+_*If you were to describe semantic HTML to the next cohort of students, what would you say?*_
+
+*Name two big differences between display: block; and display: inline;.*
+
+*What are the 4 areas of the box model?*
+
+*While using flexbox, what axis does the following property work on: align-items: center?*
+
+*Explain why git is valuable to a team of developers.*
+
+*Advanced CSS*
+
+What is the difference between an adaptive website and a fully responsive website? Responsiveness is fluid and adapts to the size of the screen no matter what the target device. Adaptive is designed to fit any type of device. 
+
+Describe what it means to be mobile first vs desktop first. To build mobile first that means the website will be used mostly on mobile platforms. To build desktop first, which is most common, the application is intended to be used most on a desktop application mo.  
+
+What does font-size: 62.5% in the html tag do for us when using rem units? This makes the default font size for your entire website 10px and is all so 1rem. 
+
+How would you describe preprocessing to someone new to CSS? 
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? Nesting, variables, and mixins. 
+
+JavaScript Fundamentals
+
+Describe the biggest difference between .forEach & .map. 
+forEach() executes a provided function once for each array element.
+map() creates a new array with the results of calling a provided function on every element in the calling array.
+
+What is the difference between a function and a method?
+A method has a dependency and a function doesn’t need one.  
+
+What is closure? A closure is the combination of a function bundled together (enclosed) with references to its surrounding state. 
+
+Describe the four rules of the 'this' keyword.
+The function must call:
+Implicit binding
+Explicit binding
+New binding
+Window binding
+
+Why do we need super() in an extended class? The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods.
+
+Applied JavaScript
+
+What is the DOM? Document Object Model
+
+What is an event? actions or occurrences. When a mouse clicks or hovers over something it 
+
+What is an event listener? The listener listens out for the event happening within the DOM
+
+Why would we convert a NodeList into an Array? 
+
+What is a component?
+
+Intro to React
+
+What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+ What does it mean to think in react?
+
+ Describe state.
+
+ Describe props.
+
+ What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Single Page Applications (SPA)
+
+Explain benefit(s) using client-side routing?
+
+Advanced React
+
+Why would you use class component over function components (removing hooks from the question)?
+
+ Name three lifecycle methods and their purposes.
+
+ What is the purpose of a custom hook?
+
+ Why is it important to test our apps?
+
+Advanced State Management
+ 
+What problem does the context API help solve?
+
+ In your own words, describe actions, reducers and the store and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+ What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+ Describe redux-thunk, what does it allow us to do? How does it change our action-creators?
+
+ What is your favorite state management system you've learned and this sprint? Please explain why.
+
+Advanced Web Applications
+
+Explain what a token is used for.
+
+ What steps can you take in your web apps to keep your data secure?
+
+ Describe how web servers work.
+
+ Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+Frontend Questions
+A company needs you to make their website more accessible. What are some of the first things you consider?
+When are asynchronous methods useful? Why are Async/Await, Callbacks, and Promises useful?
+
+Changes to state that should affect the rendering of a stateful React component aren’t updating the component as expected. What could be causing this issue? 
+
+Why should we use Proptypes in React?
+
+A company has a website that currently renders very badly on tablets and mobile devices. You’ve been tasked to make the site responsive. How will you go about this?
+
+When should you opt to use a stateless component vs a stateful component in React? 
+
+What are the most common React Lifecycle methods? How do React hooks relate to these? 
+
+When do you need to use binding and the keyword “this” in Javascript? 
+
+When should we use rem and em over px (pixels)? 
+
+What is the constructor used for in classes? 
+
+What are the layers off the CSS box model? 
+
+What is the DOM? How does this relate to React’s Virtual DOM? 
+
+In plain Javascript, what are event handlers used for? Give an example of event handler use? 
+
+In plain Javascript, how do you target a component (what are query selector methods used for?) 
+
+Explain CSS Specificity? What CSS selector has the highest specificity priority? 
+
+What are some advantages to using CSS Preprocessors like LESS and SASS? 
+
+What is a focus ring; what is the preferred way to handle them to maintain accessibility? 
+
+What is the alt prop on image tags used/useful for? 
+
+What is the difference between global and local scopes? What about function and block scope?
+
+What is the difference in using var vs let vs const? 
+
+
+
+
+
+
+
+Web Review
+https://www.notion.so/Web-Review-Sessions-949d0874b92c4fae9b9d620649610909
+
+Closures Explained 
+https://www.reddit.com/r/csELI5/comments/1q1eh8/eli5_closures/
+
+SASS vs LESS
+https://learn.onemonth.com/sass-vs-less/
