@@ -721,3 +721,19 @@ john.calcAge();
 console.log(john);
 
 
+// var newHire = whatIfImGoodAtBoth('kSSwimmy');
+
+// function whatIfImGoodAtBoth(hireMe) {
+//     return hireMe;
+// }
+// console.log(newHire);
+
+const aManInNyc = theOneWhoTellsLies('Elan')
+
+function aManInNyc(putsOnForFB) {
+
+    if(theOneWhoTellsLies === putsOnForFB)
+
+    return aManInNyc;
+}
+console.log(aManInNyc)
