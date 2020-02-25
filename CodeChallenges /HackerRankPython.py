@@ -38,7 +38,12 @@ Constraints:
 3. Stacks have lifo odering (last in first out)
 """
 
-# O(n^2) runtime    
+# O(n^2) runtime:
+# A function with a quadratic time complexity has a growth rate of n2. 
+# If the input is size 2, 
+# it will do four operations. If the input is size 8, 
+# it will take 64, and so on. 
+  
 def sort_stack(input_stack):
   # invert the elements of the input stack 
   # given this baseline, how do we perform the sorting?
@@ -100,4 +105,3 @@ sorted_stack = sort_stack(s)
 sorted_stack.print_contents()  # should print 1, 4, 5, 6, 8, 19
 
 
-#
