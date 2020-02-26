@@ -1,4 +1,5 @@
-#Queues: A Tale of Two Stacks#########################################################
+#Queues: A Tale of Two Stacks #########################################################
+#https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem?h_r=internal-search
 class MyQueue(object):
     def __init__(self):
         self.first = []
@@ -14,6 +15,8 @@ class MyQueue(object):
     def put(self, value):
         self.first.append(value)
         pass
+
+    #or import queue from Queue
     
 queue = MyQueue()
 t = int(raw_input())
